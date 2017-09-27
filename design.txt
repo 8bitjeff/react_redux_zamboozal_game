@@ -182,8 +182,43 @@ Redux State
     }
 
 React Presentation Components
-    die - there will be 5 of these displayed with 1 - 6 dots based
-        on the state value of the die
+    die - 9 slots for dots. pass in value and the slots are filled out with templates for each
+    dieone=[
+        0,0,0,
+        0,1,0,
+        0,0,0
+        ]
+
+     dietwo=[
+        1,0,0,
+        0,0,0,
+        0,0,1
+        ]
+    
+     diethree=[
+        1,0,0,
+        0,1,0,
+        0,0,1
+        ]
+
+    diefour=[
+        1,0,1,
+        0,0,0,
+        1,0,1
+        ]
+
+    diefive=[
+        1,0,1,
+        0,1,0,
+        1,0,1
+        ]
+        
+    diesix=[
+        1,0,1,
+        1,0,1,
+        1,0,1
+        ]
+
     score-item-button
     score-item-label
     scaoe-item-score
@@ -250,17 +285,9 @@ Node Elements for saving top scores
 CSS Elements
 die
 
-die-one
-
-die-two
-
-die-three
-
-die-four
-
-die-five
-
-die-six 
+ dot-holder
+ dot
+ dot-blank
 
 die-holder - need 5 of these
 
