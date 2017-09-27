@@ -1,0 +1,32 @@
+.die{
+    display:inline-block;
+    width:90px;
+    height:90px;
+    max-height:90px;
+    max-width:90px;
+    background-color:#dddddd;
+    text-align:center;
+    padding-top:3px;
+    padding-left:8px;
+    padding-right:20px;
+    border-radius: 10px;
+}
+
+.dot-holder{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    text-align:center;
+}
+
+.dot{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    background-color:black;
+    border-radius: 6px;
+}
+
+.dot-blank{
+    background-color:#dddddd;
+}
