@@ -1,0 +1,279 @@
+React Redux Zamboozal 5 Dice
+
+Redux State
+    dice[
+        {
+            side:0,
+            clickedforreroll:false
+        },
+        {
+            side:1,
+            clickedforreroll:false
+        },
+        {
+            side:1,
+            clickedforreroll:false
+        },
+        {
+            side:1,
+            clickedforreroll:false
+        },
+        {
+            side:1,
+            clickedforreroll:false
+        },
+    ],
+    numberofrollsleft:0,
+    dietotal:0,
+    playerScore:{
+        topSix:0,
+        bonus:0,
+        BottomItems:0,
+        total:0
+    } 
+    scoreItems{
+        topsix: {
+            display:"Top-Six",
+            elements[
+                ones: {
+                    description:"1 x number of ones",
+                    display:"Ones",
+                    played:false,
+                    score: 0
+                },
+                twos: {
+                    description:"2 x number of twos",
+                    display:"Twos",
+                    played:false
+                    score: 0
+                },
+                threes: {
+                    description:"3 x number of threes",
+                    display:"Threes",
+                    played:false
+                    score: 0
+                },
+                fours: {
+                    description:"4 x number of fours",
+                    display:"Fours",
+                    played:false
+                    score: 0
+                },
+                fives: {
+                    description:"5 x number of fives",
+                    display:"Fives",
+                    played:false
+                    score: 0
+                },
+                sixes: {
+                    description:"6 x number of sixes",
+                    display:"Sixes",
+                    played:false
+                    score: 0
+                },
+            }
+        ],
+        bottomitems: {
+            display:"Bottom Items",
+            elements[
+                onepair: {
+                    description:"Any two dice the same",
+                    display:"One Pair",
+                    played:false,
+                    potentialscore:10,
+                    score: 0
+                },
+                twopair: {
+                    description:"Two sets of 2 dice the same",
+                    display:"Two Pair",
+                    played:false,
+                    potentialscore:15,
+                    score: 0
+                },
+                microstraight: {
+                    description:"Three consecutive sides",
+                    display:"Micro Straight",
+                    played:false,
+                    potentialscore:15,
+                    score: 0
+                },
+                 smallstraight: {
+                    description:"Four consecutive sides", 
+                    display:Small Straight",
+                    played:false,
+                    potentialscore:20,
+                    score: 0
+                },
+                largestraight: {
+                    description:"Five consecutive sides",
+                    display:"Large Straight",
+                    played:false,
+                    potentialscore:30,
+                    score: 0
+                },
+                fullhouse: {
+                    description:"2 of a kind and 3 of a kind",
+                    display:"Full House",
+                    played:false,
+                    potentialscore:30,
+                    score: 0
+                },
+                threeofakind: {
+                    description:"3 sides the same",
+                    display:"Three of a Kind",
+                    played:false,
+                    potentialscore:18,
+                    score: 0
+                },
+                 fourofakind: {
+                    description:"4 sides the same",
+                    display:"Four of a Kind",
+                    played:false,
+                    potentialscore:24,
+                    score: 0
+                },
+                chance: {
+                    description:"score all the sides added up",
+                    display:"Chance",
+                    played:false,
+                    potentialscore:36,
+                    score: 0
+                },
+                zamboozal: {
+                    display:"all 5 sides the same. Score * side value",
+                    display:"2nd Zamboozal",
+                    played:false,
+                    potentialscore:100,
+                    score: 0
+                },
+                secondzamboozal: {
+                    display:"all 5 sides the same. Score * side value",
+                    display:"2nd Zamboozal",
+                    played:false,
+                    potentialscore:100,
+                    score: 0
+                },
+                gin: {
+                    display:"Gin",
+                    description:"small straight and 1 pair",
+                    played:false,
+                    potentialscore:30,
+                    score: 0
+                },
+
+                rummy: {
+                    display:"Rummy",
+                    description:"3 of a kind a 2 consecutive sides",
+                    played:false,
+                    potentialscore:30,
+                    score: 0
+                },
+
+                blackjack: {
+                    description:"Computer rolls once ties go to computer",
+                    display:"2nd Zamboozal",
+                    played:false,
+                    potentialscore:21,
+                    score: 0
+                },
+                
+            ]
+        }
+    }
+
+React Presentation Components
+    die - there will be 5 of these displayed with 1 - 6 dots based
+        on the state value of the die
+    score-item-button
+    score-item-label
+    scaoe-item-score
+    score-board
+        total-score
+        top-six-score
+        bottom-items-score
+        bonus-score
+    top-score-item-list 
+        
+        import React from 'react'
+        import Post from './scoreitemlabel.jsx'
+
+        const ScoreItemList = ({ items }) =>
+        <ul>
+            {items.map(
+            (item, i) =>
+                <li key={i.toString()}>
+                <Post {...item} />
+                </li>
+            )}
+        </ul>
+
+export default PostList
+
+
+
+    bottom-score-item-list
+    are-you-sure-pop-up
+        button - yes and no buttons
+    dice-to-be-sorted-popup
+        close-button
+    
+
+Redux Actions
+    START_GAME
+    CALCULATE_FINAL_SCORE
+    GAME_OVER
+    END_TURN
+    START_TURN 
+    ROLL_DICE
+    SELECT_SCORE_ITEM
+    CALCULATE_ITEM_SCORE
+    ADD_TO_SORE
+    SHOW_ARE_YOU_SURE_POP
+    ARE_YOU_SURE_YES_CLICK
+    ARE_YOU_SURE_NO_CLICK
+    SHOW_DICE_SORTED_POP
+    CLOSE_DICE_SORTED_POP
+
+
+Redux Reducers
+
+
+
+Redux Containers Components (connect react items to state)
+    ConnctedItemList
+    ConnectedDice
+...
+
+
+Node Elements for saving top scores
+
+CSS Elements
+die
+
+die-one
+
+die-two
+
+die-three
+
+die-four
+
+die-five
+
+die-six 
+
+die-holder - need 5 of these
+
+score-item-button
+    score-item-label
+    scaoe-item-score
+
+score-board
+        total-score
+        top-six-score
+        bottom-items-score
+        bonus-score
+are-you-sure-pop-up
+    button - yes and no buttons
+dice-to-be-sorted-popup
+    close-button
