@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf">
-    <neta http-eqiv="X-UA-Compatible" content="IE=edge">
+    <meta http-eqiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jeff Fulton">
     <meta name="description" content="Zamboozal Game">
@@ -17,137 +17,149 @@
 <div id="root" class="container">
     <div class="row">
         <!-- side 1 -->
-        <div class=col-sm-2> 
-            <div class="die" class="container">
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+        <div class="col-sm-2 die-container">
+            <div class="die-holder die-holder-selected"> 
+                <div class="die">
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                </div>
-                
             </div>
+             <div class="reroll-holder"><button class="btn btn-primary">Re-Roll</button></div>
         </div>
-        
+
         <!-- side 2 -->
-        <div class=col-sm-2> 
-            <div class="die" class="container">
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+        <div class="col-sm-2 die-container">
+            <div class="die-holder">  
+                <div class="die">
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                </div>
-                
             </div>
+             <div class="reroll-holder"><button class="btn btn-primary">Re-Roll</button></div>
         </div>
 
          <!-- side 3 -->
-        <div class=col-sm-2> 
-            <div class="die" class="container">
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+        <div class="col-sm-2 die-container">
+            <div class="cdie-holder die-holder-selected">  
+                <div class="die">
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                </div>
-                
             </div>
+             <div class="reroll-holder"><button class="btn btn-primary">Re-Roll</button></div>
         </div>
 
 
          <!-- side 4 -->    
-        <div class=col-sm-2> 
-            <div class="die" class="container">
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+        <div class="col-sm-2 die-container">
+            <div class="die-holder die-holder-selected">   
+                <div class="die">
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                    </div>
                 </div>
             </div>
+             <div class="reroll-holder"><button class="btn btn-primary">Re-Roll</button></div>
         </div>
 
           <!-- side 5 -->    
-        <div class=col-sm-2> 
-            <div class="die" class="container">
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+        <div class="col-sm-2 die-container">
+            <div class="die-holder die-holder-selected">   
+                <div class="die">
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                    </div>
                 </div>
             </div>
+             <div class="reroll-holder"><button class="btn btn-primary">Re-Roll</button></div>
         </div>
 
         <!-- side 6 -->    
-        <div class=col-sm-2> 
-            <div class="die" class="container">
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot dot dot-blank"></span></div>
-                    <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+        <div class="col-sm-2 die-container">
+            <div class="die-holder die-holder-selected">   
+                <div class="die">
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot dot dot-blank"></span></div>
+                        <div class="col-sm-4 dot-holder"><span class="dot"></span></div>
+                    </div>
                 </div>
             </div>
+             <div class="reroll-holder"><button class="btn btn-primary">Re-Roll</button></div>
         </div>
-
-        
-
     </div>
 </div>
    <script src="./build/bundle.js"></script>
